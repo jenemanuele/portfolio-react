@@ -11,6 +11,7 @@
     top: 0;
     background-attachment: fixed;
     background-position: 80;
+    font-size: 40px;
 
 }
 
@@ -36,12 +37,13 @@
    align-items: center;
    list-style: none;
    font-weight: bold;
-   font-size: 25px;
+   font-size: 40px;
    color: #400142
 }
 
 .header div ul li {
     margin-left: 25px;
+    font-size: 40px;
     
 }
 
@@ -69,6 +71,6 @@
 
 .project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover, .about-me:hover {
     background-color: whitesmoke;
-    border: 2px solid black;
+    /* border: 2px solid black; */
     box-shadow: 10px 10px 10px lightslategrey;
 }

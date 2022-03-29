@@ -8,7 +8,7 @@ const NavBar = () => (
 
             <div>
                 <ul>
-                    <li>
+                     {/* <li>
                         <a href="#project-1"> Cocktails Tonight!</a>
                     </li>
                     <li>
@@ -19,12 +19,18 @@ const NavBar = () => (
                     </li>
                     <li>
                         <a href="#project-4">Readme generator</a>
-                    </li>
+                    </li> */}
                     <li>
                         <a href="#about-me">About me</a>
                     </li>
                     <li>
                         <a href="mailto:jemanuele@gmail.com">Contact</a>
+                    </li>
+                    <li>
+                        <a href="#projects">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#resume">Resume</a>
                     </li>
                 </ul>
             </div>
