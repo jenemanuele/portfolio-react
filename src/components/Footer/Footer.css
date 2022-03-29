@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+
+body {
+    background-color: #c791c6;
+    font-family: Garamond, serif;
+    text-decoration: none;
+}
+
+p {
+    font-size: 25px;
+    font-family:  Garamond, serif;
+    color: #400142;
+}
+.footer{
+    padding: 35px;
+    clear: both;
+    font-family:  Garamond, serif;
+    text-align: center;
+    justify-content: space-between;
+    
+}
+.footer h2 {
+    font-size: 20px;
+        
+}

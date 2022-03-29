@@ -1,0 +1,26 @@
+/*Begin hero style*/
+.hero {
+    height: 700px;
+    width: 100%;
+    margin-bottom: 25px;
+    background-image: url("images/dandelion.jpg");
+    background-size: cover;
+    background-position: center;
+}
+
+a {
+    color: #01423e; 
+    font-weight: 900;  
+}
+
+a:hover {
+    background-color: whitesmoke;
+    color: #400142;
+   
+}
+
+p {
+    font-size: 25px;
+    font-family:  Garamond, serif;
+    color: #400142;
+}

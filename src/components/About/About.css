@@ -1,0 +1,21 @@
+a {
+    color: #01423e; 
+    font-weight: 900;  
+}
+
+a:hover {
+    background-color: whitesmoke;
+    color: #400142;
+   
+}
+
+p {
+    font-size: 25px;
+    font-family:  Garamond, serif;
+    color: #400142;
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
