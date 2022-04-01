@@ -1,4 +1,3 @@
-// import "./Cover.css";
 
 const Cover = () => (
     <div class="hero">
