@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Contact from '.';
 import { validateEmail } from '../../utils/helpers';
 
 function ContactForm() {
@@ -36,31 +37,65 @@ function ContactForm() {
 		}
 	};
 
+	function handleBlank(e) {
+		if (e.target.name === "Name" || e.target.name === "Message") {
+			if (!e.target.value.length) {
+				setErrorMessage(`${e.target.name} is required.`);
+			} else {
+				setErrorMessage("");
+			}
+		}
+
+		if (!errorMessage) {
+			setFormState({ ...formState, [e.target.name]: e.target.value });
+		}
+	}
 	return (
 		<section>
-		<h1 data-testid="h1tag">Contact me</h1>
-		<form id="contact-form" onSubmit={handleSubmit}>
-			<div>
-				<label htmlFor="name">Name:</label>
-				<input type="text" name="name" defaultValue={name} onBlur={handleChange} />
+			<div className="center">
+				<h2 className="page-header">Contact Me</h2>
 			</div>
 			<div>
-				<label htmlFor="email">Email address:</label>
-				<input type="email" name="email" defaultValue={email} onBlur={handleChange} />
+				<form id="contact-form">
+					<div>
+						<label htmlFor="Name">Name:</label>
+						<br></br>
+						<input
+							type="text"
+							defaultValue={name}
+							onBlur={handleBlank}
+							name="Name"
+						/>
+					</div>
+					<div>
+						<label htmlFor="email">Email address:</label>
+						<br></br>
+						<input
+							type="email"
+							defaultValue={email}
+							name="email"
+							onBlur={handleChange}
+						/>
+					</div>
+					<div>
+						<label htmlFor="Message">Message:</label>
+						<br></br>
+						<textarea
+							name="Message"
+							defaultValue={message}
+							onBlur={handleBlank}
+							rows="5"
+						/>
+					</div>
+					{errorMessage && (
+						<div>
+							<p className="error-text">{errorMessage}</p>
+						</div>
+					)}
+					<button type="submit">Submit</button>
+				</form>
 			</div>
-			<div>
-				<label htmlFor="message">Message:</label>
-				<textarea name="message" rows="5" defaultValue={message} onBlur={handleChange} />
-			</div>
-			{errorMessage && (
-			<div>
-				<p className="error-text">{errorMessage}</p>
-			</div>
-			)}
-			<button data-testid="button" type="submit">Submit</button>
-		</form>
 		</section>
 	);
-	}
-
+}
 export default ContactForm;

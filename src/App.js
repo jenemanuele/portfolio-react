@@ -10,6 +10,7 @@ import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
 import { Nav } from 'react-bootstrap';
 // import Parallax from './components/parallax';
+// continue working on Parallax functionality
 
 
 
@@ -53,21 +54,6 @@ function App() {
 
       </div>
     )
-
-      // return (
-      //   <div className="App">
-        
-      //     <NavBar />
-      //     <Cover />
-      //     <About />
-      //     <Contact />          
-      //     <div>
-      //       <Footer />
-      //     </div>
-      //   </div>
-
-      
-      // );
 
   
 }

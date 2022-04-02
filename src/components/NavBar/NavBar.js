@@ -7,12 +7,14 @@ const NavBar = (props) => {
         <header>
             <div className="header">
                 <h1><span className="Jen"> Jen</span>nifer Emanuele</h1>
+                {/* <div>
+                <img src="./images/Jen-E-small.jpg" alt="Head shot of Jennifer Emanuele" /></span>
+               </div> */}
                 
-
-                <div>
+                <div> 
                     <ul className="flex-row mobile-view">
                         <li className={currentTab === "about" ? "mx-2 navActive" : "mx-2"}>
-                            <span onClick={() => setCurrentTab("about")}>About me</span>
+                            <span onClick={() => setCurrentTab("about")}>About Me</span>
                         </li>
                         <li className={currentTab === "portfolio" ? "mx-2 navActive" : "mx-2"}>
                             <span onClick={() => setCurrentTab("portfolio")}>Portfolio</span>
