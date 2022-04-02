@@ -67,11 +67,9 @@ body {
   font-size: 40px;
 }
 .footer{
-  padding: 35px;
-  clear: both;
-  font-family:  Garamond, serif;
-  text-align: center;
-  justify-content: space-between;
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
   
 }
 
@@ -83,12 +81,19 @@ body {
 
 /*Begin hero style*/
 .hero {
-  height: 700px;
-  width: 100%;
-  margin-bottom: 25px;
+  /* height: 700px;
+  width: 100%; */
+  margin: 25px;
   /* background-image: url("images/dandelion.jpg"); */
-  background-size: cover;
-  background-position: center;
+  /* background-size: cover;
+  background-position: center; */
+  border: 2px solid red;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  /* height: 50vh; */
 }
 
 a {
@@ -116,6 +121,7 @@ p {
   background-color: #c791c6;
   color: #400142;
   flex: 0 70%;
+  border: 2px solid red;
   
 }
 
@@ -124,15 +130,15 @@ p {
   margin: 0 auto;
 }
 
-.project-1 img, .project-2 img, .project-3 img, .project-4, .about-me {
-  max-height: 400px;
+.img {
+  max-width: 100%;
 }
 
-.project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover, .about-me:hover {
+/* .project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover, .about-me:hover {
   background-color: whitesmoke;
   border: 2px solid black;
   box-shadow: 10px 10px 10px lightslategrey;
-}
+} */
 
 /*Media query for SMALLER DESKTOP SCREENS & SMALLER*/
 @media screen and (max-width: 980px) {

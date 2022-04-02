@@ -8,6 +8,8 @@ import Footer from "./components/Footer";
 import Contact from "./components/Contact";
 import Portfolio from "./components/Portfolio";
 import Resume from "./components/Resume";
+import { Nav } from 'react-bootstrap';
+// import Parallax from './components/parallax';
 
 
 
@@ -37,6 +39,7 @@ function App() {
 
     return (
       <div>
+            <NavBar />
             <div className="mobile-header">
                   <Cover currentTab={currentTab} setCurrentTab={setCurrentTab}></Cover>
 
