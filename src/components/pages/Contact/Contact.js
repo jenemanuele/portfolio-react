@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import Contact from '.';
-import { validateEmail } from '../../utils/helpers';
+import { validateEmail } from '../../../utils/helpers';
 
 function ContactForm() {
     const [formState, setFormState] = useState({ 
@@ -52,11 +52,11 @@ function ContactForm() {
 	}
 	return (
 		<section>
-			<div className="center">
+			<div className="contact">
 				<h2 className="page-header">Contact Me</h2>
 			</div>
 			<div>
-				<form id="contact-form">
+				<form id="contact-form" className="contact">
 					<div>
 						<label htmlFor="Name">Name:</label>
 						<br></br>
@@ -65,6 +65,7 @@ function ContactForm() {
 							defaultValue={name}
 							onBlur={handleBlank}
 							name="Name"
+							className="label"
 						/>
 					</div>
 					<div>
@@ -75,6 +76,7 @@ function ContactForm() {
 							defaultValue={email}
 							name="email"
 							onBlur={handleChange}
+							className="label"
 						/>
 					</div>
 					<div>

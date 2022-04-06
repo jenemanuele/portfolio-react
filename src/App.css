@@ -1,234 +1,38 @@
-* {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  text-decoration: none;
-}
-
-body {
-  background-color: #c791c6;
-  font-family: Garamond, serif;
-  text-decoration: none;
-}
-/*header & foot style*/
-
-.header {
-  padding: 20 px 35px;
-  background-color: #c791c6;
-  color: #01423e;
-  text-decoration: none;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  position: sticky;
-  top: 0;
-  background-attachment: fixed;
-  background-position: 80;
-  font-size: 40px;
-
-}
-
-.header h1 {
-  display: inline-block;
-  font-size: 60px;
-  font-weight: bold;
-  margin:0;
-
-}
-
-.header h1 .Jen {
-  color: #400142;
-  text-decoration: none;
-  margin-left: 15px;
-  
-}
-
-.header div ul {
- display: flex;
- flex-wrap: wrap;
- justify-content: space-between;
- align-items: center;
- list-style: none;
- font-weight: bold;
- font-size: 40px;
- color: #400142
-}
-
-.header div ul li {
-  margin-left: 25px;
-  
-}
-
-.header div {
-  padding-top: 15px;
-  margin-right: 50px;
-  float:right;
-  font-family:  Garamond, serif;
-  font-size: 40px;
-}
-.footer{
-  display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-  
-}
-
-.footer h2 {
-  font-size: 20px;
-      
-}
-
-
-/*Begin hero style*/
-.hero {
-  margin: 25px;
-  border: 2px solid black;
+.App {
   text-align: center;
 }
 
-.hero img {
-  width: 100%;
-  /* height: 50vh; */
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
 }
 
-a {
-  color: #01423e; 
-  font-weight: 900;  
-}
-
-a:hover {
-  background-color: whitesmoke;
-  color: #400142;
- 
-}
-
-p {
-  font-size: 25px;
-  font-family:  Garamond, serif;
-  /* color: #400142; */
-}
-
-/* Begin card style*/
- .about-me {
-  margin-bottom: 65px;
-  padding: 2%;
-  font-family: Garmond, serif;
-  font-weight: bold;
-  background-color: #c791c6;
-  color: #01423e;
-  flex: 0 70%;
-  border: 2px solid black;
-  
-}
-
-.center {
-	display: flex;
-	justify-content: center;
-}
-
-.img {
-  max-width: 100%;
-}
-
-.photo {
-  width: auto;
-  height: auto;
-  max-width: 500px;
-  max-height: 300px;
-  padding: 50px;
-}
-/* .project-1:hover, .project-2:hover, .project-3:hover, .project-4:hover, .about-me:hover {
-  background-color: whitesmoke;
-  border: 2px solid black;
-  box-shadow: 10px 10px 10px lightslategrey;
-} */
-
-/*Media query for SMALLER DESKTOP SCREENS & SMALLER*/
-@media screen and (max-width: 980px) {
-  header{
-      padding-bottom: 0;
-      justify-content: center;
-  }
-
-
-  header h1, header h1 .Jen {
-      width: 100%;
-      text-align: center;
-}
-  header div ul{
-      margin-top: 20px;
-      width: 100%;
-      justify-content: center;
-}
-  header div ul li, header div {
-      font-size: 20px;
-  }
-
-  footer h2 {
-      text-align: center;
-      width: 100%;
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
   }
 }
-  .logo {
-    width: 50px;
-    height: 50px;
-    margin-bottom: 50px;
-    cursor: pointer
-  }
-  
-  .mx-1 {
-    margin-right: var(--spacing-one);
-    margin-left: var(--spacing-one);
-  }
-  
-  .mx-2 {
-    margin-right: var(--spacing-two);
-    margin-left: var(--spacing-two);
-  }
-  
-  .my-1 {
-    margin-top: var(--spacing-one);
-    margin-bottom: var(--spacing-one);
-  }
-  
-  .my-2 {
-    margin-top: var(--spacing-two);
-    margin-bottom: var(--spacing-two);
-  }
-  
-  
-  .my-5 {
-    margin-top: var(--spacing-five);
-    margin-bottom: var(--spacing-five);
-  }
-  
-  .px-1 {
-    padding-right: var(--spacing-one);
-    padding-left: var(--spacing-one);
-  }
-  
-  .px-2 {
-    padding-right: var(--spacing-two);
-    padding-left: var(--spacing-two);
-  }
-  
-  .py-1 {
-    padding-top: var(--spacing-one);
-    padding-bottom: var(--spacing-one);
-  }
-  
-  .py-2 {
-    padding-top: var(--spacing-two);
-    padding-bottom: var(--spacing-two);
-  }
-/*Media Query for tablets and smaller */
-@media screen and (max-width: 768px) {
 
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
 }
 
-/*Media Query for MOBILE PHONES & SMALLER */
-@media screen and (max-width: 575px) {
-footer {
-  margin-top: 50px; 
-      }
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }

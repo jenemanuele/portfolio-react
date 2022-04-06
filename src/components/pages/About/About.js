@@ -1,4 +1,4 @@
-// import "./About.css";
+
 
 function About() {
 
@@ -21,4 +21,4 @@ function About() {
   )
 }
 
-export default About
+export default About;

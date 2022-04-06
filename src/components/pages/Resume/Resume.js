@@ -3,9 +3,9 @@ import React from "react";
 function Resume() {
     return(
             <section>
-                <div className="center">
+                <div className="resume">
                     <h1 className="page-header">Resume</h1>
-                    <h2 className="secondary-header">Proficiencies:</h2>
+                    {/* <h2 className="secondary-header">Proficiencies:</h2> */}
                 </div>
                 <div>
                     <h5>Front-End</h5>
