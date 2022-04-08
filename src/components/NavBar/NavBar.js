@@ -1,41 +1,61 @@
-import "./NavBar.css";
+import React from 'react';
+// Here we are using object destructuring assignment to pluck off our variables from the props object
+// We assign them to their own variable names
 
-const NavBar = () => (
-    <header>
-        <div className="header">
+function NavBar({ currentPage, handlePageChange }) {
+    return (
+        <header>
+          <div className="header">                
             <h1><span className="Jen"> Jen</span>nifer Emanuele</h1>
-            
-
-            <div>
-                <ul>
-                     {/* <li>
-                        <a href="#project-1"> Cocktails Tonight!</a>
-                    </li>
-                    <li>
-                        <a href="#project-2">A Sheet of Inventory</a>
-                    </li>
-                    <li>
-                        <a href="#project-3">Workday Scheduler</a>
-                    </li>
-                    <li>
-                        <a href="#project-4">Readme generator</a>
-                    </li> */}
-                    <li>
-                        <a href="#about-me">About me</a>
-                    </li>
-                    <li>
-                        <a href="mailto:jemanuele@gmail.com">Contact</a>
-                    </li>
-                    <li>
-                        <a href="#projects">Projects</a>
-                    </li>
-                    <li>
-                        <a href="#resume">Resume</a>
-                    </li>
-                </ul>
+                  <div>
+                    <ul className="nav nav-tabs">
+                      <li className="nav-item">
+                        <a
+                          href="#about"
+                          onClick={() => handlePageChange('About')}
+                          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+                          className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
+                        >
+                          About Me
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a
+                          href="#"
+                          onClick={() => handlePageChange('Portfolio')}
+                          // Check to see if the currentPage is `portfolio`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+                          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
+                        >
+                          Portfolio
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a
+                          href="#contact"
+                          onClick={() => handlePageChange('Contact')}
+                          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+                          className={currentPage === 'Contact' ? 'nav-link active' : 'nav-link'}
+                        >
+                          Contact
+                        </a>
+                      </li>
+                      <li className="nav-item">
+                        <a
+                          href="#resume"
+                          onClick={() => handlePageChange('Resume')}
+                          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+                          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+                        >
+                          Resume
+                        </a>
+                      </li>
+                    </ul>
+              </div> 
             </div>
-        </div>
-    </header>
-)
+          </header>
 
-export default NavBar;
+    );
+  }
+  
+  export default NavBar;
+  

@@ -1,4 +1,4 @@
-import "./Footer.css";
+// import "./Footer.css";
 
 const Footer = () => (
     <footer className="footer">
@@ -9,7 +9,7 @@ const Footer = () => (
 					rel="noopener noreferrer"
 				>
 					<img
-						src={require("../../logo/github.png")}
+						src={require("../../../logo/github.png")}
 						alt="Github"
 						className="logo"
 					></img>
@@ -22,7 +22,7 @@ const Footer = () => (
 					rel="noopener noreferrer"
 				>
 					<img
-						src={require("../../logo/LinkedIn.png")}
+						src={require("../../../logo/LinkedIn.png")}
 						alt="LinkedIn"
 						className="logo"
 					></img>
@@ -35,7 +35,7 @@ const Footer = () => (
 					rel="noopener noreferrer"
 				>
 					<img
-						src={require("../../logo/Instagram.png")}
+						src={require("../../../logo/Instagram.png")}
 						alt="Twitter"
 						className="logo"
 					></img>

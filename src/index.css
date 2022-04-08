@@ -1,13 +1,357 @@
-body {
+* {
+  box-sizing: border-box;
+  padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  text-decoration: none;
+} 
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body, html {
+    font-family: 'Rubik', sans-serif;
+    /* -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased; */
+    background-color: #c791c6;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Rubik', sans-serif;
+	font-weight: 500;
+	margin: 5px 0;
+	line-height: 1.25;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+/*header & foot style*/
+
+.header {
+  display: flex;
 }
+
+.header, .nav-item {
+  padding: 20 px 35px;
+  background-color: #c791c6;
+  color: #01423e;
+  text-decoration: none;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  background-attachment: fixed;
+  background-position: 80;
+  font-size: 40px;
+
+}
+
+.header h1, .nav-item  {
+  display: inline-block;
+  font-size: 60px;
+  font-weight: bold;
+  margin:0;
+  color: #01423e;
+
+}
+
+.header h1 .Jen {
+  color: #400142;
+  text-decoration: none;
+  margin-left: 15px;
+  
+}
+
+.header div ul,.nav-item {
+ display: flex;
+ flex-wrap: wrap;
+ justify-content: space-between;
+ align-items: center;
+ list-style: none;
+ font-weight: bold;
+ font-size: 40px;
+ color: #400142
+}
+
+.header div ul li, .nav-item  {
+  margin-left: 25px;
+  
+}
+.nav-tabs {
+  font-family: 'Rubik', sans-serif;
+}
+.form {
+	width: 40%;
+}
+
+.input {
+	font-size: 1rem;
+	padding: 0.25rem;
+	border: 1px solid var(--dark);
+	outline: none;
+	border-radius: 3px;
+	transition: box-shadow 0.2s;
+	width: 600px;
+  justify-content: center;
+}
+.header div, .nav-item  {
+  padding-top: 15px;
+  margin-right: 50px;
+  float:right;
+  font-family:  'Rubik', sans-serif;
+  font-size: 40px;
+}
+.footer{
+  display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+  
+}
+ input:focus {
+	border: 1px solid whitesmoke;
+	box-shadow: 0 0 .25rem rgba(0, 0, 0, .5);
+} 
+
+ol li {
+	list-style: inside;
+  font-family:  'Rubik', sans-serif;
+}
+
+ul li {
+	list-style: none;
+  font-family:  'Rubik', sans-serif;
+}
+
+nav a:hover {
+	text-decoration: none;
+}
+
+nav li {
+	cursor: pointer;
+}
+.footer h2 {
+  font-size: 20px;
+      
+}
+.page-header {
+  font-family:  'Rubik', sans-serif;
+
+}
+/*Begin hero style*/
+.hero {
+  margin: 25px;
+  border: 2px solid black;
+  text-align: center;
+}
+
+.hero img {
+  width: 100%;
+  /* height: 50vh; */
+}
+
+a {
+  color: #01423e; 
+ 
+}
+
+/* a:hover {
+  background-color: whitesmoke;
+  color: #400142;
+ 
+} */
+
+p {
+  font-size: 25px;
+  font-family:  'Rubik', sans-serif;
+  color: #01423e; 
+}
+
+/* Begin card style*/
+ .about-me, h1 {
+  margin-bottom: 80px;
+  padding: 5%;
+  font-family: 'Rubik', sans-serif;
+   background-color: #c791c6;
+  color: #01423e;
+  flex: 0 70%;
+  /* border: 2px solid black;  */
+        
+}
+
+ .resume {
+  margin-bottom: 65px;
+  padding: 2%;
+  font-family: 'Rubik', sans-serif;
+  font-weight: bold;
+  background-color: #c791c6;
+  color: #01423e;
+  flex: 0 70%;
+  border: 2px solid black;
+  
+} 
+.center {
+	display: flex;
+	justify-content: center;
+}
+
+.img {
+  max-width: 100%;
+}
+
+.photo {
+  width: auto;
+  height: auto;
+  max-width: 500px;
+  max-height: 300px;
+  padding: 50px;
+}
+
+/*Media query for SMALLER DESKTOP SCREENS & SMALLER*/
+@media screen and (max-width: 980px) {
+  header{
+      padding-bottom: 0;
+      justify-content: center;
+  }
+
+   header h1, header h1 .Jen {
+      width: 100%;
+      text-align: center;
+} 
+  header div ul{
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+}
+  header div ul li, header div {
+      font-size: 20px;
+  }
+
+  footer h2 {
+      text-align: center;
+      width: 100%;
+  }
+}
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 50px;
+    cursor: pointer
+  }
+  nav a:hover {
+    text-decoration: none;
+  }
+  
+  nav  li {
+    cursor: pointer;
+    background-color: whitesmoke;
+  }
+  
+  textarea {
+    width: 600px;
+    height: 120px;
+    border: 3px solid black;
+    padding: 5px;
+    color:rgba(0, 0, 0, .5)
+  }
+  
+  .container {
+    width: 85%;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .label {
+    border: 3px solid black;
+  }
+  .flex-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .center {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    height: 20vh;  
+}
+button {
+	background: #8e328c;
+	border: 0;
+	border-radius: .5rem;
+	color: #fff;
+	cursor: pointer;
+	font-size: 16px;
+	font-weight: 600;
+	padding: 10px 15px;
+	font-size: 1rem;
+
+}
+
+button:hover {
+	opacity: .6;
+}
+
+/* Viewports Styling start*/
+@media screen and (max-width: 980px) {}
+
+@media screen and (max-width: 817px) {
+	header div {
+		position: relative;
+		width: 110%;
+	}
+
+	header div h2 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	nav ul li span {
+		font-size: 0.75em;
+	}
+
+	.mobile-header {
+		width: 110%;
+	}
+
+	.mobile-row {
+		display: block;
+		margin: 0 100px 0 auto;
+	}
+
+	.mobile-view {
+		display: inline;
+		text-align: end;
+	}
+
+	.photo {
+		width: auto;
+		height: auto;
+		max-width: 500px;
+		max-height: 300px;
+		padding: 50px;
+	}
+
+	input {
+		width: 350px;
+	}
+
+	textarea {
+		width: 350px;
+		height: 120px;
+		border: 3px solid #cccccc;
+		padding: 5px;
+	}
+
+	ol {
+		font-size: 0.75rem;
+	}
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 575px) {}
