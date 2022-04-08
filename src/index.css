@@ -26,6 +26,10 @@ h6 {
 
 /*header & foot style*/
 
+.header {
+  display: flex;
+}
+
 .header, .nav-item {
   padding: 20 px 35px;
   background-color: #c791c6;
@@ -163,22 +167,21 @@ p {
 }
 
 /* Begin card style*/
- .about-me {
-  margin-bottom: 65px;
-  padding: 2%;
-  font-family: Garmond, serif;
-  font-weight: bold;
-  background-color: #c791c6;
+ .about-me, h1 {
+  margin-bottom: 80px;
+  padding: 5%;
+  font-family: 'Rubik', sans-serif;
+   background-color: #c791c6;
   color: #01423e;
   flex: 0 70%;
-  border: 2px solid black;
-  
+  /* border: 2px solid black;  */
+        
 }
 
  .resume {
   margin-bottom: 65px;
   padding: 2%;
-  font-family: Garmond, serif;
+  font-family: 'Rubik', sans-serif;
   font-weight: bold;
   background-color: #c791c6;
   color: #01423e;
@@ -288,14 +291,67 @@ button:hover {
 	opacity: .6;
 }
 
-/*Media Query for tablets and smaller */
-@media screen and (max-width: 768px) {
+/* Viewports Styling start*/
+@media screen and (max-width: 980px) {}
 
+@media screen and (max-width: 817px) {
+	header div {
+		position: relative;
+		width: 110%;
+	}
+
+	header div h2 {
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	h2 {
+		font-size: 1.5rem;
+	}
+
+	nav ul li span {
+		font-size: 0.75em;
+	}
+
+	.mobile-header {
+		width: 110%;
+	}
+
+	.mobile-row {
+		display: block;
+		margin: 0 100px 0 auto;
+	}
+
+	.mobile-view {
+		display: inline;
+		text-align: end;
+	}
+
+	.photo {
+		width: auto;
+		height: auto;
+		max-width: 500px;
+		max-height: 300px;
+		padding: 50px;
+	}
+
+	input {
+		width: 350px;
+	}
+
+	textarea {
+		width: 350px;
+		height: 120px;
+		border: 3px solid #cccccc;
+		padding: 5px;
+	}
+
+	ol {
+		font-size: 0.75rem;
+	}
 }
 
-/*Media Query for MOBILE PHONES & SMALLER */
-@media screen and (max-width: 575px) {
-footer {
-  margin-top: 50px; 
-      }
-}
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 575px) {}

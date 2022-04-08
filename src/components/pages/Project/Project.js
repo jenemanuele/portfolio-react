@@ -12,6 +12,7 @@ function Project(props) {
 	const appLink = currentProject.deployed;
 	const gitLink = currentProject.github;
 
+
 	// Function: parses info from the array, then creates a list.
 	function getProjects(projectArray) {
 		let techList = "";
@@ -29,17 +30,16 @@ function Project(props) {
 
 	return (
 		<Card style={{ width: "18rem" }}>
-			<Card.Img
+			{/* <Card.Img
 				variant="top"
 				src={require(`../../../../public/images/${image}`)}
 				className="card-image"
-			/>
+			/> */}
 			<div className="center">
 				<Card.Body>
-					<Card.Title className="card-title">{name}</Card.Title>
-					<Card.Text className="card-text">{description}</Card.Text>
+					<Card.Title className="card-title">{name}</Card.Title>					<Card.Text className="card-text">{description}</Card.Text>
 					<Card.Subtitle className="card-subtitle">Techs Used</Card.Subtitle>
-					<Card.Text className="card-techs">{getProjects(techs)}</Card.Text>
+					{/* <Card.Text className="card-techs">{getProjects(techs)}</Card.Text> */}
 					<Card.Link href={appLink} target="_blank" className="card-link">
 						{name} App
 					</Card.Link>

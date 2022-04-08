@@ -3,7 +3,7 @@ import React from "react";
 function Resume() {
     return(
             <section>
-                <div className="resume">
+                <div className="place-items-center">
                     <h1 className="page-header">Resume</h1>
                     {/* <h2 className="secondary-header">Proficiencies:</h2> */}
                 </div>

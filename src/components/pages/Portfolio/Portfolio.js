@@ -6,7 +6,7 @@ function Portfolio() {
         {
             name: 'Sheet of Inventory',
             description: 'Sheet-of-Inventory a instrument warehouse application that allows the user to easily find, update, and add to current inventory.',
-            //image: '../../SheetOfInventory.JPG',
+            image: '../../SheetOfInventory.JPG',
             technology: [
                 'HTML & CSS',
                 'JavaScript',
@@ -22,7 +22,7 @@ function Portfolio() {
         {
 			name: 'Cocktails Tonight',
 			description: 'Purpose A website application that gives users a random cocktail and a random recipe per a search button for a fun date night or cocktail night at home! Also a YouTube pop-out window for a video on how to make your recipe.',
-			// image: '../../SheetOfInventory.JPG',
+			image: '../../../SheetOfInventory.JPG',
 			technologies: [
 				'HTML & CSS',
 				'Bulma',
@@ -36,7 +36,7 @@ function Portfolio() {
         {
 			name: 'Budget Tracker',
 			description: 'A budget tracker that will work with or without an internet connection. Items will be added to the db after the internet connection is established using a service worker.',
-			//image: '../../BudgetTracker.JPG',
+			image: '../../../BudgetTracker.JPG',
 			technologies: [
 				'JavaScript',
 				'MongoDB',
@@ -61,7 +61,7 @@ function Portfolio() {
         {
 			name: 'Password Generator',
 			description: 'Application that combines the front and back end that allows a user to generate a password combination of 8 to 128 characters based on selected criteria.',
-			//image: 'Password-Gen.JPG',
+			image: 'Password-Gen.JPG',
 			technologies: [
 				'HTML & CSS',
 				'JavaScript',
@@ -73,7 +73,7 @@ function Portfolio() {
         {
 			name: 'README-generator',
 			description: 'Back-end utility that generates a readme file for github.',
-			//image: 'README-generator.JPG',
+			image: 'README-generator.JPG',
 			technologies: [
 				'Node.js',
 				'Inquirer',	
