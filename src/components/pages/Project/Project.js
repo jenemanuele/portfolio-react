@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Card } from "react-bootstrap";
+import { Card, Row, Col, Container } from "react-bootstrap";
 
 function Project(props) {
 	// This imports info for current project.
@@ -29,27 +29,31 @@ function Project(props) {
 	}
 
 	return (
-		<Card style={{ width: "18rem" }}>
-			{/* <Card.Img
-				variant="top"
-				src={require(`../../../../public/images/${image}`)}
-				className="card-image"
-			/> */}
-			<div className="center">
-				<Card.Body>
-					<Card.Title className="card-title">{name}</Card.Title>					<Card.Text className="card-text">{description}</Card.Text>
-					<Card.Subtitle className="card-subtitle">Techs Used</Card.Subtitle>
-					{/* <Card.Text className="card-techs">{getProjects(techs)}</Card.Text> */}
-					<Card.Link href={appLink} target="_blank" className="card-link">
-						{name} App
-					</Card.Link>
-					<br></br>
-					<Card.Link href={gitLink} target="_blank" className="card-link">
-						{name} Github
-					</Card.Link>
-				</Card.Body>
-			</div>
-		</Card>
+		<Container>
+			<Row>
+				<Card>
+				{/* <Card.Img
+							variant="top" 
+							src={require(`../../../${image}`)}
+							className="card-image"
+						/> */}
+						<Card.Body>
+							
+							<Card.Title className="card-title">{name}</Card.Title>				
+							<Card.Text className="card-text">{description}</Card.Text>
+							<Card.Subtitle className="card-subtitle">Techs Used</Card.Subtitle>
+							<Card.Link href={appLink} target="_blank" className="card-link">
+								{name} App
+							</Card.Link>
+							<br></br>
+							<Card.Link href={gitLink} target="_blank" className="card-link">
+								{name} Github
+							</Card.Link>
+						</Card.Body>
+				</Card>
+			</Row>
+		</Container>
+
 	);
 }
 

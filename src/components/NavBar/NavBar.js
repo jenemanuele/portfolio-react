@@ -8,7 +8,7 @@ function NavBar({ currentPage, handlePageChange }) {
           <div className="header">                
             <h1><span className="Jen"> Jen</span>nifer Emanuele</h1>
                   <div>
-                    <ul className="nav nav-tabs">
+                    <ul className="nav link">
                       <li className="nav-item">
                         <a
                           href="#about"
