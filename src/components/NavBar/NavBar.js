@@ -7,9 +7,9 @@ function NavBar({ currentPage, handlePageChange }) {
         <header>
           <div className="header">                
             <h1><span className="Jen"> Jen</span>nifer Emanuele</h1>
-                  <div>
-                    <ul className="nav link">
-                      <li className="nav-item">
+                  <div href="#link">
+                    <ul className="linkText">
+                      <li className="nav-link">
                         <a
                           href="#about"
                           onClick={() => handlePageChange('About')}

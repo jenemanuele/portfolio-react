@@ -8,8 +8,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
 body, html {
     font-family: 'Rubik', sans-serif;
-    /* -moz-osx-font-smoothing: grayscale;
-    -webkit-font-smoothing: antialiased; */
     background-color: #c791c6;
 }
 h1,
@@ -70,15 +68,17 @@ h6 {
  list-style: none;
  font-weight: bold;
  font-size: 40px;
- color: #400142
+ color: #400142;
 }
 
 .header div ul li, .nav-item  {
   margin-left: 25px;
+  color: #400142;
   
 }
 .nav-tabs {
   font-family: 'Rubik', sans-serif;
+  color: #400142;
 }
 .form {
 	width: 40%;
@@ -100,6 +100,7 @@ h6 {
   float:right;
   font-family:  'Rubik', sans-serif;
   font-size: 40px;
+  color: #400142;
 }
 .footer{
   display: flex;
@@ -115,19 +116,24 @@ h6 {
 ol li {
 	list-style: inside;
   font-family:  'Rubik', sans-serif;
+  color: #400142;
 }
 
 ul li {
 	list-style: none;
   font-family:  'Rubik', sans-serif;
-}
+  }
 
+.linkText {
+  color: #400142;
+}
 nav a:hover {
 	text-decoration: none;
 }
 
-nav li {
+nav-link {
 	cursor: pointer;
+  color: #400142;
 }
 .footer h2 {
   font-size: 20px;
@@ -151,14 +157,11 @@ nav li {
 
 a {
   color: #400142; 
- 
 }
 
- a:hover {
+  a:hover {
   background-color: whitesmoke;
-  color: #400142;
- 
-}
+  }
 
 p {
   font-size: 25px;
@@ -206,7 +209,47 @@ p {
   padding: 50px;
 }
 
-/*Media query for SMALLER DESKTOP SCREENS & SMALLER*/
+.card {
+	width: 25%;
+	text-align: center;
+}
+
+.card-title {
+	font-size: 1.5rem;
+	color: var(--quaternary);
+}
+
+.card-subtitle {
+	font-size: 1rem;
+}
+
+.card-text {
+	font-size: 0.75rem;
+	height: 8rem;
+}
+
+.card-techs {
+	font-size: 0.75rem;
+	height: 4rem;
+}
+
+.card-image {
+	max-width: 300px;
+	max-height: 150px;
+}
+
+.card-link {
+	font-family: 'Rubik', sans-serif; 
+	font-size: 0.70rem;
+}
+  .logo {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 50px;
+    cursor: pointer
+  }
+
+/* Media query for SMALLER DESKTOP SCREENS & SMALLER
 @media screen and (max-width: 980px) {
   header{
       padding-bottom: 0;
@@ -289,7 +332,7 @@ button {
 
 button:hover {
 	opacity: .6;
-}
+} */
 
 /* Viewports Styling start*/
 @media screen and (max-width: 980px) {}

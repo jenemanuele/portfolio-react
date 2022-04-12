@@ -74,10 +74,10 @@ function Portfolio() {
 			name: 'README-generator',
 			description: 'Back-end utility that generates a readme file for github.',
 			image: 'README-generator.JPG',
-			technologies: [
-				'Node.js',
-				'Inquirer',	
-			],
+			// technologies: [
+			// 	'Node.js',
+			// 	'Inquirer',	
+			// ],
 			github: 'https://github.com/jenemanuele/README-generator',
 			deployed: 'Back-end project',
 		},

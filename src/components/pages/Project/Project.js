@@ -32,11 +32,11 @@ function Project(props) {
 		<Container>
 			<Row>
 				<Card>
-				{/* <Card.Img
-							variant="top" 
-							src={require(`../../../${image}`)}
-							className="card-image"
-						/> */}
+					{/* <Card.Img 
+					variant="top" 					 
+					src={require(`../../../${image}`)}
+					className="card-image"
+					/> */}
 						<Card.Body>
 							
 							<Card.Title className="card-title">{name}</Card.Title>				
