@@ -3,6 +3,13 @@ import Project from '../Project'
 
 function Portfolio() {
     const projects = [
+		{
+            name: 'Drink and Draw',
+            description: 'Drink and draw is a company that offers customers the chance to order any number of several types of experiences, based on the idea of an adult craft night. Patrons are able to choose based on size, theme, and alcohol type to provide them and their guests a fun group experience',
+            image: '../../drink-and-draw.JPG',
+            github: 'https://github.com/jenemanuele/drink-and-draw',
+            deployed: 'https://rocky-river-99926.herokuapp.com/'
+        },
         {
             name: 'Sheet of Inventory',
             description: 'Sheet-of-Inventory a instrument warehouse application that allows the user to easily find, update, and add to current inventory.',
